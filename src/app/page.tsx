@@ -1,7 +1,6 @@
-import { Home } from "@/features/Home";
-import { DUCK_UNDER_ROUTE } from "@/shared/constants/global.constants";
 import { Metadata } from "next";
 import Link from 'next/link'
+import { DUCK_UNDER_ROUTE } from "@/shared/constants/global.constants";
 
 export const metadata: Metadata = {
   title: 'BJJ Basics - Home',
@@ -18,7 +17,6 @@ export default function MainPage() {
           <Link className="underline" href={DUCK_UNDER_ROUTE}>Duck under</Link>
         </nav>
       </section>
-      <Home />
     </main>
   );
 }
