@@ -1,6 +1,12 @@
 import Image from "next/image";
 import { EIGHTH_STEP_VIDEO_SRC, FIFTH_STEP_VIDEO_SRC, FIRST_STEP_IMG_SRC, FOURTH_STEP_VIDEO_SRC, NINTH_STEP_VIDEO_SRC, SECOND_STEP_VIDEO_SRC, SEVENTH_STEP_VIDEO_SRC, SIXTH_STEP_VIDEO_SRC } from "./duck-under.constants";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'Duck under takedown',
+  description: 'Learn the duck under takedown technique in Brazilian Jiu-Jitsu.',
+};
 
 export default function DuckUnderPage() {
   return (
