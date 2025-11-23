@@ -1,5 +1,7 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
+import { FIRST_STEP_VIDEO_SRC, FOURTH_STEP_VIDEO_SRC, SECOND_STEP_IMG_SRC, THIRD_STEP_IMG_SRC } from "./passing-guard.constants";
 
 export const metadata: Metadata = {
   title: 'Passing guard',
@@ -18,41 +20,34 @@ export default function PassingGuardPage() {
           <li>
             Push your palms against below the ribs of your oponent to break the lock on his legs
           </li>
+          <video src={FIRST_STEP_VIDEO_SRC} controls muted autoPlay loop className="md:aspect-square md:object-cover w-2xl h-72" />
+
           <li>
             Staple one kene with your hand which will tilt the body of your opponent to one side
           </li>
+          <Image
+            src={SECOND_STEP_IMG_SRC}
+            alt="First step of duck under"
+            width={1306}
+            height={641}
+            className="md:aspect-square md:object-cover w-2xl h-72"
+          />
+
           <li>
             Then replace your hand with your leg
           </li>
+          <Image
+            src={THIRD_STEP_IMG_SRC}
+            alt="First step of duck under"
+            width={1345}
+            height={630}
+            className="md:aspect-square md:object-cover w-2xl h-72"
+          />
+
           <li>
             Start passing your other leg and progress the position to side control
           </li>
-          {/* <Image
-            src={FIRST_STEP_IMG_SRC}
-            alt="First step of duck under"
-            width={605}
-            height={530}
-            className="md:aspect-square md:object-cover w-72 h-72"
-          />
-
-          <li>With your other arm, put your palm on his bicep pushing his arm away</li>
-          <video src={SECOND_STEP_VIDEO_SRC} controls muted autoPlay loop className="md:aspect-square md:object-cover w-72 h-72" />
-          <li>Use push pull theory. We have to reach the point where our arm is holding the tricep.</li>
-
-          <li>We need to flare his arm out and up to create an opening</li>
-          <video src={FOURTH_STEP_VIDEO_SRC} controls muted autoPlay loop className="md:aspect-square md:object-cover w-72 h-72" />
-
-          <li>We land the knee to enter. Getting your head past their armpit is imperative. As you reach his back, with your arm pull his body to the floor. Pull his forearm and complete with your other arm taking his elbow</li>
-          <video src={FIFTH_STEP_VIDEO_SRC} controls muted autoPlay loop className="md:aspect-square md:object-cover w-72 h-72" />
-
-          <li>Here is the sequence complete. Once you got your hand on his neck and the other on the bicep, do the flare rapidly. Do not dance</li>
-          <video src={SIXTH_STEP_VIDEO_SRC} controls muted autoPlay loop className="md:aspect-square md:object-cover w-72 h-72" />
-
-          <li>Pull his forearm and complete with your other arm taking his elbow</li>
-          <video src={SEVENTH_STEP_VIDEO_SRC} controls muted autoPlay loop className="md:aspect-square md:object-cover w-72 h-72" />
-
-          <li>Now that you have wrapped his left arm, place your foot into his </li>
-          <video src={EIGHTH_STEP_VIDEO_SRC} controls muted autoPlay loop className="md:aspect-square md:object-cover w-72 h-72" /> */}
+          <video src={FOURTH_STEP_VIDEO_SRC} controls muted autoPlay loop className="md:aspect-square md:object-cover w-2xl h-72" />
         </ul>
 
         <div className="flex flex-col items-center gap-4">
