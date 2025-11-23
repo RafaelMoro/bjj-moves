@@ -1,10 +1,12 @@
 import Image from "next/image";
 import { EIGHTH_STEP_VIDEO_SRC, FIFTH_STEP_VIDEO_SRC, FIRST_STEP_IMG_SRC, FOURTH_STEP_VIDEO_SRC, NINTH_STEP_VIDEO_SRC, SECOND_STEP_VIDEO_SRC, SEVENTH_STEP_VIDEO_SRC, SIXTH_STEP_VIDEO_SRC } from "./duck-under.constants";
+import Link from "next/link";
 
 export default function DuckUnderPage() {
   return (
     <main className="min-h-screen p-4 flex flex-col items-center gap-8">
       <h1 className="text-4xl font-bold">Duck under</h1>
+      <Link href="/">Go back</Link>
       <a href="https://www.youtube.com/watch?v=Ww-SsGOHemY&t=41s" target="_blank" rel="noopener noreferrer">Video instruction</a>
       <section className="flex flex-col gap-4">
         <h2 className="text-3xl font-semibold text-center">Steps:</h2>
