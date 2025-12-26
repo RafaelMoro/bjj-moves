@@ -22,9 +22,12 @@ export default function MainPage() {
             <li><strong>Takedown:</strong> A technique used to bring an opponent to the ground from a standing position.</li>
           </ul>
         </article>
-        <nav className="list-disc p-2">
-          <Link className="underline" href={PASSING_GUARD_ROUTE}>Passing guard</Link>
-        </nav>
+        <article className="flex flex-col gap-3">
+          <h4 className="text-xl font-semibold">Techniques</h4>
+          <nav>
+            <Link className="underline" href={PASSING_GUARD_ROUTE}>Passing guard</Link>
+          </nav>
+        </article>
       </section>
       <section className="flex flex-col gap-5">
         <h2 className="text-2xl font-bold">Takedowns</h2>
