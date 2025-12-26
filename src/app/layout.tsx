@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { ThemeProvider as NextThemesProvider } from "next-themes";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -26,14 +25,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Providers>
-          <NextThemesProvider attribute="class" defaultTheme="dark">
-            {children}
-          </NextThemesProvider>
+          {children}
         </Providers>
       </body>
     </html>
