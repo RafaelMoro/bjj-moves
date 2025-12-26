@@ -23,7 +23,7 @@ export default function PassingGuardPage() {
           <video src={FIRST_STEP_VIDEO_SRC} controls muted autoPlay loop className="md:aspect-square md:object-cover w-2xl h-72" />
 
           <li>
-            Staple one kene with your hand which will tilt the body of your opponent to one side
+            Staple one knee with your hand which will tilt the body of your opponent to one side. Control the other leg by underhooking it in your armpit
           </li>
           <Image
             src={SECOND_STEP_IMG_SRC}
@@ -34,7 +34,7 @@ export default function PassingGuardPage() {
           />
 
           <li>
-            Then replace your hand with your leg
+            Then replace your hand with your leg. Start positioning your hands in a way to control the arms of the opponent.
           </li>
           <Image
             src={THIRD_STEP_IMG_SRC}
