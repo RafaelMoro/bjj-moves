@@ -13,6 +13,15 @@ export default function MainPage() {
       <h1 className="text-4xl font-bold">Welcome to BJJ Basics</h1>
       <section className="flex flex-col gap-5">
         <h2 className="text-2xl font-bold">Basics</h2>
+        <article>
+          <h4 className="text-xl font-semibold">Useful terms</h4>
+          <ul className="flex flex-col gap-2 ml-8 mt-4 list-disc p-2">
+            <li><strong>Guard:</strong> A position where one practitioner is on their back controlling the opponent with their legs.</li>
+            <li><strong>Passing guard:</strong> The act of moving from inside an opponent&apos;s guard to a more dominant position.</li>
+            <li><strong>Side control:</strong> A dominant position where one practitioner is on top, perpendicular to the opponent.</li>
+            <li><strong>Takedown:</strong> A technique used to bring an opponent to the ground from a standing position.</li>
+          </ul>
+        </article>
         <nav className="list-disc p-2">
           <Link className="underline" href={PASSING_GUARD_ROUTE}>Passing guard</Link>
         </nav>
