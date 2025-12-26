@@ -1,3 +1,9 @@
+## v0.5.0 (2025-12-26)
+
+### Pull Requests
+[#4](https://github.com/RafaelMoro/bjj-moves/pull/4) | Add passing guard
+
+
 ## v0.4.0 (2025-11-23)
 
 ### Pull Requests
