@@ -1,65 +1,40 @@
-import Image from "next/image";
+import { Metadata } from "next";
+import Link from 'next/link'
+import { DUCK_UNDER_ROUTE, PASSING_GUARD_ROUTE } from "@/shared/constants/global.constants";
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: 'BJJ Basics - Home',
+  description: 'Welcome to the home page of BJJ Basics, your resource for learning Brazilian Jiu-Jitsu techniques.',
+};
+
+export default function MainPage() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <main className="min-h-screen flex flex-col justify-center items-center gap-5">
+      <h1 className="text-4xl font-bold">Welcome to BJJ Basics</h1>
+      <section className="flex flex-col gap-5">
+        <h2 className="text-2xl font-bold">Basics</h2>
+        <article>
+          <h4 className="text-xl font-semibold">Useful terms</h4>
+          <ul className="flex flex-col gap-2 ml-8 mt-4 list-disc p-2">
+            <li><strong>Guard:</strong> A position where one practitioner is on their back controlling the opponent with their legs.</li>
+            <li><strong>Passing guard:</strong> The act of moving from inside an opponent&apos;s guard to a more dominant position.</li>
+            <li><strong>Side control:</strong> A dominant position where one practitioner is on top, perpendicular to the opponent.</li>
+            <li><strong>Takedown:</strong> A technique used to bring an opponent to the ground from a standing position.</li>
+          </ul>
+        </article>
+        <article className="flex flex-col gap-3">
+          <h4 className="text-xl font-semibold">Techniques</h4>
+          <nav>
+            <Link className="underline" href={PASSING_GUARD_ROUTE}>Passing guard</Link>
+          </nav>
+        </article>
+      </section>
+      <section className="flex flex-col gap-5">
+        <h2 className="text-2xl font-bold">Takedowns</h2>
+        <nav className="list-disc p-2">
+          <Link className="underline" href={DUCK_UNDER_ROUTE}>Duck under</Link>
+        </nav>
+      </section>
+    </main>
   );
 }
