@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Link from 'next/link'
-import { DUCK_UNDER_ROUTE, PASSING_GUARD_ROUTE } from "@/shared/constants/global.constants";
+import { DAILY_DECEMBER_ROUTE, DUCK_UNDER_ROUTE, PASSING_GUARD_ROUTE } from "@/shared/constants/global.constants";
 
 export const metadata: Metadata = {
   title: 'BJJ Basics - Home',
@@ -26,6 +26,12 @@ export default function MainPage() {
           <h4 className="text-xl font-semibold">Techniques</h4>
           <nav>
             <Link className="underline" href={PASSING_GUARD_ROUTE}>Passing guard</Link>
+          </nav>
+        </article>
+        <article className="flex flex-col gap-3">
+          <h4 className="text-xl font-semibold">Daily notes</h4>
+          <nav>
+            <Link className="underline" href={DAILY_DECEMBER_ROUTE}>Dec 2025</Link>
           </nav>
         </article>
       </section>
