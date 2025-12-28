@@ -64,6 +64,21 @@ export default function DailyDec2025Page() {
         </div>
       </article>
 
+      <section>
+        <h2 className="text-3xl font-bold">Next things to try</h2>
+
+        <article className="flex flex-col gap-5">
+          <h4 className="text-2xl font-bold">Go from side control to north south</h4>
+
+          <div className="flex flex-col gap-4">
+            <p className="text-xl font-semibold">Steps</p>
+            <ul className="list-disc list-inside">
+              <li>...</li>
+              <li>...</li>
+            </ul>
+          </div>
+        </article>
+      </section>
     </main>
   )
 }
