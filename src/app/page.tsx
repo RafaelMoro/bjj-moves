@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Link from 'next/link'
-import { DAILY_DECEMBER_ROUTE, DUCK_UNDER_ROUTE, PASSING_GUARD_ROUTE, TRANSITION_BREAKING_GUARD_LINK, TRANSITION_SIDECONTROL_NORTHSOUTH_LINK, TRANSITION_SWEEP_MOUNT_CLOSED_GUARD_LINK } from "@/shared/constants/global.constants";
+import { DAILY_DECEMBER_ROUTE, DUCK_UNDER_ROUTE, NO_GI_EZEKIEL_CHOKE_TIKTOK, PASSING_GUARD_ROUTE, TRANSITION_BREAKING_GUARD_LINK, TRANSITION_SIDECONTROL_NORTHSOUTH_LINK, TRANSITION_SWEEP_MOUNT_CLOSED_GUARD_LINK } from "@/shared/constants/global.constants";
 
 export const metadata: Metadata = {
   title: 'BJJ Basics - Home',
@@ -41,6 +41,8 @@ export default function MainPage() {
             <li>Try guillotine</li>
             <li>Try darce choke from north south</li>
             <li>Transition from mount to back mount</li>
+            <li>Transition from side control to knee on belly</li>
+            <li>Setup an arm no hi ezekiel choke from mount <a href={NO_GI_EZEKIEL_CHOKE_TIKTOK}>TikTok</a></li>
           </ul>
           <article>
             <h4>Go from sidecontrol to north south</h4>
