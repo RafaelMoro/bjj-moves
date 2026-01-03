@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 
-import { ARM_TRIANGLE_FROM_MOUNT_TIKTOK, TRIANGLE_CHOKE_SETUP_FROM_MOUNT_YT } from "@/shared/constants/global.constants";
+import { TRIANGLE_CHOKE_SETUP_FROM_MOUNT_YT } from "@/shared/constants/global.constants";
 import { RiArrowLeftLine } from "@remixicon/react";
 import { EIGHTH_STEP_IMG_SRC, ELEVENTH_STEP_IMG_SRC, FIFTH_STEP_IMG_SRC, FIRST_STEP_IMG_SRC, FOURTH_STEP_IMG_SRC, NINTH_STEP_IMG_SRC, SECOND_STEP_IMG_SRC, SEVENTH_STEP_IMG_SRC, SIXTH_STEP_IMG_SRC, TENTH_STEP_IMG_SRC, THIRD_STEP_IMG_SRC } from "./triangle-choke.constants";
 
@@ -14,16 +14,15 @@ export default function TriangleChokeFromMountPage() {
         </Link>
         <h1 className="text-4xl font-bold">Triangle choke from mount by Craig Jones</h1>
       </header>
-      <main className="flex flex-col gap-10">
-          <section>
+      <div className="mt-16 grid grid-30-70 justify-items-center">
+          <aside className="flex flex-col items-center">
             <h2 className="text-2xl font-bold mb-5">References</h2>
-            <nav className="flex flex-col gap-3 pl-3">
-              <a className="underline" href={ARM_TRIANGLE_FROM_MOUNT_TIKTOK}>Tiktok</a>
-              <a className="underline" href={TRIANGLE_CHOKE_SETUP_FROM_MOUNT_YT}>Youtube reference: Triangle setup from mount</a>
-              <a href="https://youtu.be/xnlx_hNfuZ4?si=JBWv_HFeXf9Vvqfg&t=195">Complete sequence</a>
+            <nav className="flex flex-col items-center gap-3 pl-3">
+              <a className="underline" target="_blank" href={TRIANGLE_CHOKE_SETUP_FROM_MOUNT_YT}>Youtube reference: Triangle setup from mount</a>
+              <a className="underline" target="_blank" href="https://youtu.be/xnlx_hNfuZ4?si=JBWv_HFeXf9Vvqfg&t=195">Complete sequence</a>
             </nav>
-          </section>
-          <section>
+          </aside>
+          <main>
             <h3 className="text-3xl font-bold mb-5">Steps:</h3>
             <ol className="list-decimal pl-6 flex flex-col gap-3">
               <li>From mount, Pin opponent&apos;s arm to the mat using your both hands and grabbing his wrist</li>
@@ -32,7 +31,7 @@ export default function TriangleChokeFromMountPage() {
                 alt="First step of triangle choke from mount"
                 width={605}
                 height={530}
-                className="md:aspect-square md:object-cover w-72 h-72"
+                className="md:aspect-square md:object-cover w-72 h-72 mb-10"
               />
 
               <li>Go for the crossface and elevating his arm a little</li>
@@ -41,7 +40,7 @@ export default function TriangleChokeFromMountPage() {
                 alt="Second step of triangle choke from mount"
                 width={605}
                 height={530}
-                className="md:aspect-square md:object-cover w-72 h-72"
+                className="md:aspect-square md:object-cover w-72 h-72 mb-10"
               />
 
               <li>While pushing his arm up, have a fist being put in his armpit</li>
@@ -50,7 +49,7 @@ export default function TriangleChokeFromMountPage() {
                 alt="Third step of triangle choke from mount"
                 width={605}
                 height={530}
-                className="md:aspect-square md:object-cover w-72 h-72"
+                className="md:aspect-square md:object-cover w-72 h-72 mb-10"
               />
 
               <li>One you are sure that your fist is on his armpit, post with the two hands using your fists</li>
@@ -59,7 +58,7 @@ export default function TriangleChokeFromMountPage() {
                 alt="Fourth step of triangle choke from mount"
                 width={605}
                 height={530}
-                className="md:aspect-square md:object-cover w-72 h-72"
+                className="md:aspect-square md:object-cover w-72 h-72 mb-10"
               />
 
               <li>Slide one leg behind his back and get your knee under his armpit</li>
@@ -68,7 +67,7 @@ export default function TriangleChokeFromMountPage() {
                 alt="Fifth step of triangle choke from mount"
                 width={605}
                 height={530}
-                className="md:aspect-square md:object-cover w-72 h-72"
+                className="md:aspect-square md:object-cover w-72 h-72 mb-10"
               />
 
               <li>Immediately grab your ankle behind his shoulder</li>
@@ -77,7 +76,7 @@ export default function TriangleChokeFromMountPage() {
                 alt="Sixth step of triangle choke from mount"
                 width={605}
                 height={530}
-                className="md:aspect-square md:object-cover w-72 h-72"
+                className="md:aspect-square md:object-cover w-72 h-72 mb-10"
               />
 
               <li>Lean forward posting and get your knee behind his neck</li>
@@ -86,7 +85,7 @@ export default function TriangleChokeFromMountPage() {
                 alt="Seventh step of triangle choke from mount"
                 width={605}
                 height={530}
-                className="md:aspect-square md:object-cover w-72 h-72"
+                className="md:aspect-square md:object-cover w-72 h-72 mb-10"
               />
 
               <li>Lock your anckle with your other leg to make the triangle</li>
@@ -95,7 +94,7 @@ export default function TriangleChokeFromMountPage() {
                 alt="Eighth step of triangle choke from mount"
                 width={605}
                 height={530}
-                className="md:aspect-square md:object-cover w-72 h-72"
+                className="md:aspect-square md:object-cover w-72 h-72 mb-10"
               />
 
               <li>Start siting and then go to your back grabbing one leg</li>
@@ -111,7 +110,7 @@ export default function TriangleChokeFromMountPage() {
                 alt="Tenth step of triangle choke from mount"
                 width={605}
                 height={530}
-                className="md:aspect-square md:object-cover w-72 h-72"
+                className="md:aspect-square md:object-cover w-72 h-72 mb-10"
               />
 
               <li>When being on that position, to make the triangle tighter, grab his wrist and put his elbow to the floor</li>
@@ -123,8 +122,8 @@ export default function TriangleChokeFromMountPage() {
                 className="md:aspect-square md:object-cover w-72 h-72"
               />
             </ol>
-          </section>
-      </main>
+          </main>
+      </div>
     </div>
   )
 }
