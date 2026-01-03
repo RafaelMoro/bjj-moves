@@ -1,3 +1,9 @@
+## v0.7.0 (2026-01-03)
+
+### Pull Requests
+[#7](https://github.com/RafaelMoro/bjj-moves/pull/7) | Add hold guard page
+
+
 ## v0.6.0 (2026-01-03)
 
 ### Pull Requests
