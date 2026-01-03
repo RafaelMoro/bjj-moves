@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Link from 'next/link'
-import { DUCK_UNDER_ROUTE, PASSING_GUARD_ROUTE } from "@/shared/constants/global.constants";
+import { ARM_TRIANGLE_FROM_MOUNT_TIKTOK, DAILY_DECEMBER_2025_ROUTE, DAILY_JANUARY_2026_ROUTE, DUCK_UNDER_ROUTE, NO_GI_DARCE_CHOKE_NORTH_SOUTH, NO_GI_EZEKIEL_CHOKE_TIKTOK, PASSING_GUARD_ROUTE, TRANSITION_BREAKING_GUARD_LINK, TRANSITION_SIDECONTROL_NORTHSOUTH_LINK, TRANSITION_SWEEP_MOUNT_CLOSED_GUARD_LINK, TRIANGLE_CHOKE_FROM_MOUNT_ROUTE } from "@/shared/constants/global.constants";
 
 export const metadata: Metadata = {
   title: 'BJJ Basics - Home',
@@ -9,8 +9,9 @@ export const metadata: Metadata = {
 
 export default function MainPage() {
   return (
-    <main className="min-h-screen flex flex-col justify-center items-center gap-5">
+    <main className="min-h-screen p-5 flex flex-col gap-10">
       <h1 className="text-4xl font-bold">Welcome to BJJ Basics</h1>
+      { /** Basics section */}
       <section className="flex flex-col gap-5">
         <h2 className="text-2xl font-bold">Basics</h2>
         <article>
@@ -22,13 +23,82 @@ export default function MainPage() {
             <li><strong>Takedown:</strong> A technique used to bring an opponent to the ground from a standing position.</li>
           </ul>
         </article>
-        <article className="flex flex-col gap-3">
-          <h4 className="text-xl font-semibold">Techniques</h4>
-          <nav>
-            <Link className="underline" href={PASSING_GUARD_ROUTE}>Passing guard</Link>
-          </nav>
+      </section>
+
+        { /** Techniques section */}
+      <section className="flex flex-col gap-3">
+        <h4 className="text-xl font-semibold">Techniques</h4>
+        <nav className="flex flex-col gap-3 pl-4">
+          <Link className="underline" href={PASSING_GUARD_ROUTE}>Passing guard</Link>
+          <Link className="underline" href={TRIANGLE_CHOKE_FROM_MOUNT_ROUTE}>Triangle choke from mount</Link>
+        </nav>
+      </section>
+
+      { /** Daily notes section */}
+      <section className="flex flex-col gap-3">
+        <h4 className="text-xl font-semibold">Daily notes</h4>
+        <nav className="flex flex-col gap-3 pl-4">
+          <Link className="underline" href={DAILY_DECEMBER_2025_ROUTE}>Dec 2025</Link>
+          <Link className="underline" href={DAILY_JANUARY_2026_ROUTE}>Jan 2026</Link>
+        </nav>
+      </section>
+
+      { /** Things to try section */}
+      <section className="flex flex-col gap-3">
+        <h4 className="text-xl font-semibold">Things to try</h4>
+        <ul>
+          <li>Try armbar from mount</li>
+          <li>Try guillotine</li>
+          <li>Try darce choke from north south <a href={NO_GI_DARCE_CHOKE_NORTH_SOUTH}>TikTok</a></li>
+          <li>Transition from mount to back mount</li>
+          <li>Transition from side control to knee on belly</li>
+          <li>Setup an arm no gi ezekiel choke from mount <a href={NO_GI_EZEKIEL_CHOKE_TIKTOK}>TikTok</a></li>
+          <li>Do a scissors sweep from closed guard (you bottom) to mount</li>
+          <li>Do an arm triangle from mount <a href={ARM_TRIANGLE_FROM_MOUNT_TIKTOK}>Tiktok</a></li>
+        </ul>
+        <article>
+          <h4>Go from sidecontrol to north south</h4>
+          <a href={TRANSITION_SIDECONTROL_NORTHSOUTH_LINK}>Side control to north south link</a>
+          <ul>
+            <li>Initialize from side control with your collarbone pushing on his ribs</li>
+            <li>Note that you need your leg under his arm</li>
+            <li>Pass your north side arm that wraps under his neck to move the arm over his neck</li>
+            <li>Drop your hips so his arm trapped ir near his head</li>
+            <li>Extend your legs and drop your hips over his arm</li>
+            <li>Then start transitioning into north south with the south arm on his hips to avoid the opponent to turn</li>
+          </ul>
+        </article>
+
+        <article>
+          <h4>Pass the guard</h4>
+          <a href={TRANSITION_BREAKING_GUARD_LINK}>Breaking guard link</a>
+          <ul>
+            <li>Position your body as away as possible with your back aligned (espalda derechita)</li>
+            <li>Put your strong leg between his legs</li>
+            <li>Pin and stretch to break closed guard</li>
+            <li>Pin one leg to the mat and be aware of the other leg, underhook it may be an option</li>
+            <li>Start passing with the leg next the opponent</li>
+            <li>move your grips into the head and shoulders</li>
+            <li>Use your other leg to stretch it and stabilize the transition to finally pass your leg trapped into side control</li>
+          </ul>
+        </article>
+
+        <article>
+          <h4>Roll from mount to closed guard</h4>
+          <a href={TRANSITION_SWEEP_MOUNT_CLOSED_GUARD_LINK}>Roll from mount to closed guard link</a>
+          <ul>
+            <li>Me being on bottom</li>
+            <li>Take one arm and pass his collarbone, his chin and wrap his arm with your armpit</li>
+            <li>With your arm wrapping his arm, apply downward pressure into his elbow to avoid the opponent to post</li>
+            <li>Use your leg of the side of the arm pushing his leg into our arm trapped</li>
+            <li>Chop your arm into his armpit with an angle of 11 or 10. Your head being 12 and your legs being 6</li>
+            <li>Bridge off the opposite foot</li>
+            <li>Just roll until you are in his closed guard</li>
+          </ul>
         </article>
       </section>
+
+      { /** Takedowns section */}
       <section className="flex flex-col gap-5">
         <h2 className="text-2xl font-bold">Takedowns</h2>
         <nav className="list-disc p-2">

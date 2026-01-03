@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { FIRST_STEP_VIDEO_SRC, FOURTH_STEP_VIDEO_SRC, SECOND_STEP_IMG_SRC, THIRD_STEP_IMG_SRC } from "./passing-guard.constants";
+import { RiArrowLeftLine } from "@remixicon/react";
 
 export const metadata: Metadata = {
   title: 'Passing guard',
@@ -11,8 +12,10 @@ export const metadata: Metadata = {
 export default function PassingGuardPage() {
   return (
     <main className="min-h-screen p-4 flex flex-col items-center gap-8">
+      <Link href="/">
+        <RiArrowLeftLine />
+      </Link>
       <h1 className="text-4xl font-bold">Passing guard</h1>
-      <Link href="/">Go back</Link>
       <a href="https://www.youtube.com/watch?v=slQ-imlIU9I&list=PL-immDk5vYqwvmm85QCYuWXM54vVgDB1H&index=2&t=49s" target="_blank" rel="noopener noreferrer">Video instruction</a>
       <section className="flex flex-col gap-4">
         <h2 className="text-3xl font-semibold text-center">Steps:</h2>
