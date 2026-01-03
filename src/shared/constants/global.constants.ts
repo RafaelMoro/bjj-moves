@@ -11,3 +11,6 @@ export const TRANSITION_SWEEP_MOUNT_CLOSED_GUARD_LINK = 'https://youtu.be/tMi92v
 export const NO_GI_EZEKIEL_CHOKE_TIKTOK = 'https://vt.tiktok.com/ZS56XyfNc/'
 export const NO_GI_DARCE_CHOKE_NORTH_SOUTH = 'https://vt.tiktok.com/ZS5646TfB/'
 export const ARM_TRIANGLE_FROM_MOUNT_TIKTOK = 'https://vt.tiktok.com/ZS564kNxJ/'
+
+// Youtube video references
+export const TRIANGLE_CHOKE_SETUP_FROM_MOUNT_YT = 'https://www.youtube.com/watch?v=xnlx_hNfuZ4'
