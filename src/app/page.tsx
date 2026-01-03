@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Link from 'next/link'
-import { ARM_TRIANGLE_FROM_MOUNT_TIKTOK, DAILY_DECEMBER_ROUTE, DUCK_UNDER_ROUTE, NO_GI_DARCE_CHOKE_NORTH_SOUTH, NO_GI_EZEKIEL_CHOKE_TIKTOK, PASSING_GUARD_ROUTE, TRANSITION_BREAKING_GUARD_LINK, TRANSITION_SIDECONTROL_NORTHSOUTH_LINK, TRANSITION_SWEEP_MOUNT_CLOSED_GUARD_LINK } from "@/shared/constants/global.constants";
+import { ARM_TRIANGLE_FROM_MOUNT_TIKTOK, DAILY_DECEMBER_ROUTE, DUCK_UNDER_ROUTE, NO_GI_DARCE_CHOKE_NORTH_SOUTH, NO_GI_EZEKIEL_CHOKE_TIKTOK, PASSING_GUARD_ROUTE, TRANSITION_BREAKING_GUARD_LINK, TRANSITION_SIDECONTROL_NORTHSOUTH_LINK, TRANSITION_SWEEP_MOUNT_CLOSED_GUARD_LINK, TRIANGLE_CHOKE_FROM_MOUNT_ROUTE } from "@/shared/constants/global.constants";
 
 export const metadata: Metadata = {
   title: 'BJJ Basics - Home',
@@ -28,8 +28,9 @@ export default function MainPage() {
         { /** Techniques section */}
       <section className="flex flex-col gap-3">
         <h4 className="text-xl font-semibold">Techniques</h4>
-        <nav>
+        <nav className="flex flex-col gap-3 pl-4">
           <Link className="underline" href={PASSING_GUARD_ROUTE}>Passing guard</Link>
+          <Link className="underline" href={TRIANGLE_CHOKE_FROM_MOUNT_ROUTE}>Triangle choke from mount</Link>
         </nav>
       </section>
 
@@ -50,7 +51,7 @@ export default function MainPage() {
           <li>Try darce choke from north south <a href={NO_GI_DARCE_CHOKE_NORTH_SOUTH}>TikTok</a></li>
           <li>Transition from mount to back mount</li>
           <li>Transition from side control to knee on belly</li>
-          <li>Setup an arm no hi ezekiel choke from mount <a href={NO_GI_EZEKIEL_CHOKE_TIKTOK}>TikTok</a></li>
+          <li>Setup an arm no gi ezekiel choke from mount <a href={NO_GI_EZEKIEL_CHOKE_TIKTOK}>TikTok</a></li>
           <li>Do a scissors sweep from closed guard (you bottom) to mount</li>
           <li>Do an arm triangle from mount <a href={ARM_TRIANGLE_FROM_MOUNT_TIKTOK}>Tiktok</a></li>
         </ul>
