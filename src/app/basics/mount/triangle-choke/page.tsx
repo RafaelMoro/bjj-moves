@@ -14,7 +14,7 @@ export default function TriangleChokeFromMountPage() {
         </Link>
         <h1 className="text-4xl font-bold">Triangle choke from mount by Craig Jones</h1>
       </header>
-      <div className="mt-16 grid grid-30-70 justify-items-center">
+      <div className="mt-16 grid grid-cols-1 lg:grid-cols-[30%_70%] justify-items-center">
           <aside className="flex flex-col items-center">
             <h2 className="text-2xl font-bold mb-5">References</h2>
             <nav className="flex flex-col items-center gap-3 pl-3">
