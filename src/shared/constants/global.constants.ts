@@ -1,9 +1,11 @@
 // Routes
 export const DUCK_UNDER_ROUTE = '/takedowns/duck-under';
-export const PASSING_GUARD_ROUTE = '/basics/passing-guard';
 export const DAILY_DECEMBER_2025_ROUTE = '/daily/dec-2025'
 export const DAILY_JANUARY_2026_ROUTE = '/daily/jan-2026'
+
+export const PASSING_GUARD_ROUTE = '/basics/passing-guard';
 export const TRIANGLE_CHOKE_FROM_MOUNT_ROUTE = '/basics/mount/triangle-choke';
+export const GUARD_RETENTION_ROUTE = '/basics/guard-retention';
 
 // Videos references
 export const TRANSITION_SIDECONTROL_NORTHSOUTH_LINK = 'https://youtu.be/tMi92vMnKyQ?si=VyvyV_xfKLQrXa-a&t=630';

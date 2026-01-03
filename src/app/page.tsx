@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Link from 'next/link'
-import { ARM_TRIANGLE_FROM_MOUNT_TIKTOK, DAILY_DECEMBER_2025_ROUTE, DAILY_JANUARY_2026_ROUTE, DUCK_UNDER_ROUTE, NO_GI_DARCE_CHOKE_NORTH_SOUTH, NO_GI_EZEKIEL_CHOKE_TIKTOK, PASSING_GUARD_ROUTE, TRANSITION_BREAKING_GUARD_LINK, TRANSITION_SIDECONTROL_NORTHSOUTH_LINK, TRANSITION_SWEEP_MOUNT_CLOSED_GUARD_LINK, TRIANGLE_CHOKE_FROM_MOUNT_ROUTE } from "@/shared/constants/global.constants";
+import { ARM_TRIANGLE_FROM_MOUNT_TIKTOK, DAILY_DECEMBER_2025_ROUTE, DAILY_JANUARY_2026_ROUTE, DUCK_UNDER_ROUTE, GUARD_RETENTION_ROUTE, NO_GI_DARCE_CHOKE_NORTH_SOUTH, NO_GI_EZEKIEL_CHOKE_TIKTOK, PASSING_GUARD_ROUTE, TRANSITION_BREAKING_GUARD_LINK, TRANSITION_SIDECONTROL_NORTHSOUTH_LINK, TRANSITION_SWEEP_MOUNT_CLOSED_GUARD_LINK, TRIANGLE_CHOKE_FROM_MOUNT_ROUTE } from "@/shared/constants/global.constants";
 
 export const metadata: Metadata = {
   title: 'BJJ Basics - Home',
@@ -30,6 +30,7 @@ export default function MainPage() {
         <h4 className="text-xl font-semibold">Techniques</h4>
         <nav className="flex flex-col gap-3 pl-4">
           <Link className="underline" href={PASSING_GUARD_ROUTE}>Passing guard</Link>
+          <Link className="underline" href={GUARD_RETENTION_ROUTE}>Guard retention</Link>
           <Link className="underline" href={TRIANGLE_CHOKE_FROM_MOUNT_ROUTE}>Triangle choke from mount</Link>
         </nav>
       </section>
