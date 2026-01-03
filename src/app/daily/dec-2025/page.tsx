@@ -85,6 +85,12 @@ export default function DailyDec2025Page() {
             <ul className="list-disc list-inside">
               <li>5 steps of the mount</li>
               <li>Americana with armbar from side control</li>
+              <li>How to control an arm by walking your hand in the mat in a circle</li>
+              <li>Basics of side control</li>
+              <ul className="list-disc pl-4 list-inside">
+                <li>Have direct contact chest to chest</li>
+                <li>Crossface</li>
+              </ul>
             </ul>
           </div>
 

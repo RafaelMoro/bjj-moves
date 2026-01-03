@@ -19,24 +19,29 @@ export default function DailyDec2025Page() {
 
       <main className="mt-10 flex flex-col items-center gap-8">
         <article className="flex flex-col gap-5">
-          <h4 className="text-2xl font-bold">Monday, December 22th</h4>
+          <h4 className="text-2xl font-bold">Thursday, Jan 1st</h4>
 
           <div className="flex flex-col gap-4">
             <p className="text-xl font-semibold">What did we do well?</p>
             <ul className="list-disc list-inside">
               <li>Transition from side control to kesa gatame</li>
-              <li>Transition from side control to north south</li>
+            </ul>
+          </div>
+
+          <div className="flex flex-col gap-4">
+            <p className="text-xl font-semibold">What did we saw?</p>
+            <ul className="list-disc list-inside">
+              <li>Check again open guard and de la riva guard</li>
+              <li>Gi choke from back mount</li>
             </ul>
           </div>
 
           <div className="flex flex-col gap-4">
             <p className="text-xl font-semibold">What needs improvement?</p>
             <ul className="list-disc list-inside">
-              <li>Isolate the arm in kesa gatame</li>
-              <li>Being able to secure the arms in side control, kesa gatame and north south</li>
-              <li>Improve escape while being in opponent&apos;s closed guard</li>
-              <li>Close contact in open guard</li>
-              <li>While passing guard, enter with the knee and lower your body</li>
+              <li>I gassed out</li>
+              <li>The opponent passed my guard</li>
+              <li>I took a lot of guillotines</li>
             </ul>
           </div>
         </article>
@@ -106,9 +111,13 @@ export default function DailyDec2025Page() {
           <h2 className="text-3xl font-bold">Next things to try</h2>
           <ul className="flex flex-col gap-2">
             <li>Try armbar from mount</li>
-            <li>Try guillotine</li>
+            <li>Try triangle choke from mount</li>
+            <li>Try guillotine from closed guard</li>
             <li>Try darce choke from north south</li>
             <li>Transition from mount to back mount</li>
+            <li>Transition from me being in closed guard into ashi garami</li>
+            <li>Scissor sweep from closed guard to mount</li>
+            <li>Transition from side control to knee on belly</li>
           </ul>
         </section>
       </main>
