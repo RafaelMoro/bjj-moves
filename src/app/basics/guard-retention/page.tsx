@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { RiArrowLeftLine } from "@remixicon/react";
 import Link from "next/link";
-import { FIRST_STEP_IMG_SRC, FOURTH_STEP_IMG_SRC, SECOND_STEP_IMG_SRC, THIRD_STEP_VIDEO_SRC } from "./guard-retention.constants";
+import { FIFTH_STEP_VIDEO_SRC, FIRST_STEP_IMG_SRC, FOURTH_STEP_IMG_SRC, SECOND_STEP_IMG_SRC, THIRD_STEP_VIDEO_SRC } from "./guard-retention.constants";
 
 export default function GuardRetentionPage() {
   return (
@@ -74,6 +74,14 @@ export default function GuardRetentionPage() {
             <li>
               If he&apos;s not controlling your head, you can use your arms to bring back your legs again
             </li>
+            <video
+              src={FIFTH_STEP_VIDEO_SRC}
+              controls
+              muted
+              autoPlay
+              loop
+              className="md:aspect-square md:object-cover w-2xl h-72"
+            />
 
             <li>
               Passing your legs in the first battle, controling your neck is the second battle
