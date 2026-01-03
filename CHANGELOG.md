@@ -1,3 +1,9 @@
+## v0.6.0 (2026-01-03)
+
+### Pull Requests
+[#6](https://github.com/RafaelMoro/bjj-moves/pull/6) | Add daily notes
+
+
 ## v0.5.0 (2025-12-26)
 
 ### Pull Requests
