@@ -1,3 +1,9 @@
+## v0.7.1 (2026-01-03)
+
+### Pull Requests
+[#9](https://github.com/RafaelMoro/bjj-moves/pull/9) | Fix next version
+
+
 ## v0.7.0 (2026-01-03)
 
 ### Pull Requests
