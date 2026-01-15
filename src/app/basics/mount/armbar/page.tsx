@@ -36,7 +36,7 @@ export default function TriangleChokeFromMountPage() {
           <main>
             <h3 className="text-3xl font-bold mb-5">Steps:</h3>
             <ol className="list-decimal pl-6 flex flex-col gap-3">
-              <li>Pending</li>
+              <li>Put your left hand and put it on the opponent&apos;s shoulder</li>
               <img
                 src={FIRST_STEP_IMG_SRC}
                 alt="First step of triangle choke from mount"
