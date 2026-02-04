@@ -6,6 +6,7 @@ export const DAILY_JANUARY_2026_ROUTE = '/daily/jan-2026'
 export const PASSING_GUARD_ROUTE = '/basics/passing-guard';
 export const TRIANGLE_CHOKE_FROM_MOUNT_ROUTE = '/basics/mount/triangle-choke';
 export const ARMBAR_FROM_MOUNT_ROUTE = '/basics/mount/armbar'
+export const GUILLOTINE_CLOSED_GUARD_ROUTE = '/basics/closed-guard/guillotine';
 export const GUARD_RETENTION_ROUTE = '/basics/guard-retention';
 
 // Videos references
