@@ -1,20 +1,8 @@
-/* eslint-disable @next/next/no-img-element */
+ 
 import Link from "next/link";
 
 import { ARMBAR_SETUP_FROM_MOUNT_YT } from "@/shared/constants/global.constants";
 import { RiArrowLeftLine } from "@remixicon/react";
-import {
-  EIGHTH_STEP_IMG_SRC,
-  ELEVENTH_STEP_IMG_SRC,
-  FIFTH_STEP_IMG_SRC,
-  FIRST_STEP_IMG_SRC,
-  FOURTH_STEP_IMG_SRC,
-  SECOND_STEP_IMG_SRC,
-  SEVENTH_STEP_IMG_SRC,
-  SIXTH_STEP_IMG_SRC,
-  TENTH_STEP_IMG_SRC,
-  THIRD_STEP_IMG_SRC
-} from "../triangle-choke/triangle-choke.constants";
 
 export default function TriangleChokeFromMountPage() {
   return (
@@ -37,94 +25,41 @@ export default function TriangleChokeFromMountPage() {
             <h3 className="text-3xl font-bold mb-5">Steps:</h3>
             <ol className="list-decimal pl-6 flex flex-col gap-3">
               <li>Put your left hand and put it on the opponent&apos;s shoulder</li>
-              <img
+              {/* <img
                 src={FIRST_STEP_IMG_SRC}
                 alt="First step of triangle choke from mount"
                 width={605}
                 height={530}
                 className="md:aspect-square md:object-cover w-72 h-72 mb-10"
-              />
+              /> */}
 
-              <li>Pending</li>
-              <img
-                src={SECOND_STEP_IMG_SRC}
-                alt="Second step of triangle choke from mount"
-                width={605}
-                height={530}
-                className="md:aspect-square md:object-cover w-72 h-72 mb-10"
-              />
+              <li>
+                Put the blade of your forearm on his neck and lock it on his jaw, then do the movement like you were checking your watch
+              </li>
 
-              <li>Pending</li>
-              <img
-                src={THIRD_STEP_IMG_SRC}
-                alt="Third step of triangle choke from mount"
-                width={605}
-                height={530}
-                className="md:aspect-square md:object-cover w-72 h-72 mb-10"
-              />
+              <li>
+                Then he tries to block that &quot;choke&quot; with his arm. When he does that, move your leg behind his elbow starting the S mount at the level of his head.
+              </li>
 
-              <li>Pending</li>
-              <img
-                src={FOURTH_STEP_IMG_SRC}
-                alt="Fourth step of triangle choke from mount"
-                width={605}
-                height={530}
-                className="md:aspect-square md:object-cover w-72 h-72 mb-10"
-              />
+              <li>Start moving your hips underneath his elbow</li>
 
-              <li>Pending</li>
-              <img
-                src={FIFTH_STEP_IMG_SRC}
-                alt="Fifth step of triangle choke from mount"
-                width={605}
-                height={530}
-                className="md:aspect-square md:object-cover w-72 h-72 mb-10"
-              />
+              <li>
+                Lock the door by using both of your hands, one on his neck and the other to the temple (behind his ear) to lock his head against your hip and leg.
+              </li>
 
-              <li>Pending</li>
-              <img
-                src={SIXTH_STEP_IMG_SRC}
-                alt="Sixth step of triangle choke from mount"
-                width={605}
-                height={530}
-                className="md:aspect-square md:object-cover w-72 h-72 mb-10"
-              />
+              <li>At the same time, move your feet underneath hir arm to finish the S mount. you want your palm foot not facing the mat, but the backend of your foot (empeine)</li>
 
-              <li>Pendingk</li>
-              <img
-                src={SEVENTH_STEP_IMG_SRC}
-                alt="Seventh step of triangle choke from mount"
-                width={605}
-                height={530}
-                className="md:aspect-square md:object-cover w-72 h-72 mb-10"
-              />
+              <li>Keep locking his have agains your leg to avoid him escaping. The lock is like your hands are the bread, your hips and leg are the other bread and his head and shoulder are the jam of the sandwich</li>
 
-              <li>Pending</li>
-              <img
-                src={EIGHTH_STEP_IMG_SRC}
-                alt="Eighth step of triangle choke from mount"
-                width={605}
-                height={530}
-                className="md:aspect-square md:object-cover w-72 h-72 mb-10"
-              />
+              <li>Lean your torso to the opponent&apos;s knee to untrap your leg, your right shoulder to oponent&apos;s right knee. As you lean, find the arm to do the submission. Your foot untrapped find the ground and sit</li>
 
-              <li>Pending</li>
-              <img
-                src={TENTH_STEP_IMG_SRC}
-                alt="Tenth step of triangle choke from mount"
-                width={605}
-                height={530}
-                className="md:aspect-square md:object-cover w-72 h-72 mb-10"
-              />
+              <li>Once your fit is on the ground, release the neck</li>
 
-              <li>Pending</li>
-              <img
-                src={ELEVENTH_STEP_IMG_SRC}
-                alt="Eleventh step of triangle choke from mount"
-                width={605}
-                height={530}
-                className="md:aspect-square md:object-cover w-72 h-72"
-              />
+              <li>One foot behind his arm and the other like on his neck. Lock your legs against your butt, tense your hamstrings</li>
+
+              <li>Clamp with the palms of your hand his wrist and start pulling his arm into you. </li>
+
+              <li>Then start elevating slowly your hips to finish the submission</li>
             </ol>
           </main>
       </div>
