@@ -5,6 +5,12 @@ import Link from "next/link";
 import { ARMBAR_SETUP_FROM_MOUNT_YT } from "@/shared/constants/global.constants";
 import { RiArrowLeftLine } from "@remixicon/react";
 import { ELEVENTH_STEP_IMG_SRC, FIFTH_STEP_IMG_SRC, FIRST_STEP_IMG_SRC, FOURTH_STEP_IMG_SRC, NINTH_STEP_IMG_SRC, SECOND_STEP_VIDEO_SRC, SEVENTH_STEP_IMG_SRC, SIXTH_STEP_IMG_SRC, TENTH_STEP_IMG_SRC, THIRD_STEP_IMG_SRC, THIRTEENTH_STEP_IMG_SRC, TWELFTH_STEP_IMG_SRC } from "./mount-armbar.constants";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: 'BJJ Basics - Armbar from mount',
+  description: 'Steps to do armbar from mount',
+};
 
 export default function TriangleChokeFromMountPage() {
   return (
