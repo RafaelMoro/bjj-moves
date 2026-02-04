@@ -5,12 +5,6 @@ import nextTs from "eslint-config-next/typescript";
 const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
-  {
-    rules: {
-      // Enforce HTML entities for quotes and apostrophes in JSX
-      "react/no-unescaped-entities": ["error", { "forbid": ["'", "\"", ">", "}"] }]
-    }
-  },
   // Override default ignores of eslint-config-next.
   globalIgnores([
     // Default ignores of eslint-config-next:
