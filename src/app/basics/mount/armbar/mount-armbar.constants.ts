@@ -1,7 +1,8 @@
 const imgDomainSrc = process.env.NEXT_PUBLIC_IMAGE_DOMAIN
+const videoDomainSrc = process.env.NEXT_PUBLIC_VIDEO_DOMAIN
 
 export const FIRST_STEP_IMG_SRC = `${imgDomainSrc}/v1770184019/mount-armbar-1_bg71cv.webp`
-export const SECOND_STEP_VIDEO_SRC = `${imgDomainSrc}/v1770184013/mount-armbar-2_myf9tg.webm`
+export const SECOND_STEP_VIDEO_SRC = `${videoDomainSrc}/v1770184013/mount-armbar-2_myf9tg.webm`
 export const THIRD_STEP_IMG_SRC = `${imgDomainSrc}/v1770184019/mount-armbar-3_cvzlcq.webp`
 export const FOURTH_STEP_IMG_SRC = `${imgDomainSrc}/v1770184018/mount-armbar-4_b6hkir.webp`
 export const FIFTH_STEP_IMG_SRC = `${imgDomainSrc}/v1770184017/mount-armbar-5_tnetee.webp`
