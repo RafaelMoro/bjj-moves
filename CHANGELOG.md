@@ -1,3 +1,9 @@
+## v0.8.0 (2026-02-04)
+
+### Pull Requests
+[#11](https://github.com/RafaelMoro/bjj-moves/pull/11) | Feat/add armbar mount page
+
+
 ## v0.7.1 (2026-01-03)
 
 ### Pull Requests
