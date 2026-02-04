@@ -19,3 +19,4 @@ export const ARM_TRIANGLE_FROM_MOUNT_TIKTOK = 'https://vt.tiktok.com/ZS564kNxJ/'
 // Youtube video references
 export const TRIANGLE_CHOKE_SETUP_FROM_MOUNT_YT = 'https://www.youtube.com/watch?v=xnlx_hNfuZ4'
 export const ARMBAR_SETUP_FROM_MOUNT_YT = 'https://www.youtube.com/watch?v=iUap4TaYVQc&list=PL-immDk5vYqyuTMv0Rwq7yYSxvDBKkbVI&index=6&t=326s'
+export const GUILLLOTINE_SETUP_FROM_CLOSED_GUARD_YT = 'https://www.youtube.com/watch?v=YWwRC0V6O9Y'
