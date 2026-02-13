@@ -1,0 +1,19 @@
+const imgDomainSrc = process.env.NEXT_PUBLIC_IMAGE_DOMAIN
+const videoDomainSrc = process.env.NEXT_PUBLIC_VIDEO_DOMAIN
+
+export const STEP_1_GRIP_IMG_SRC = `${imgDomainSrc}/v1770957783/guillotine-1-grip_wyhfsu.webp`
+export const STEP_2_WRIST_BLADE_SRC = `${imgDomainSrc}/v1770957828/guillotine-2-wrist-blade_i2cj1u.webp`
+export const STEP_3_WRIST_PLACEMENT_SRC = `${imgDomainSrc}/v1770957758/guillotine-3-wrist-placement_mbusls.webp`
+export const STEP_4_ELBOW_OVER_SRC = `${imgDomainSrc}/v1770957758/guillotine-4-elbow-over_wnhfa5.webp`
+export const STEP_5_HOLD_PRESSURE_SRC = `${imgDomainSrc}/v1770957758/guillotine-5-hold-pressure_h1lmg6.webp`
+export const STEP_6_WRIST_BLADE_SRC = `${imgDomainSrc}/v1770957758/guillotine-6-wrist-blade_timcnc.webp`
+export const STEP_7_HEAD_POSITION_SRC = `${imgDomainSrc}/v1770957758/guillotine-7-head-position_bg6ijp.webp`
+export const STEP_8_CRIMP_HOSE_SRC = `${imgDomainSrc}/v1770957758/guillotine-8-crimp-hose_khtqku.webp`
+export const STEP_9_CRIMP_NECK_VIDEO_SRC = `${videoDomainSrc}/v1770957856/guillotine-9-crimp-neck-video_uui92h.webm`
+export const STEP_10_CRIMP_HEAD_SRC = `${imgDomainSrc}/v1770957759/guillotine-10-crimp-head_hz4sz0.webp`
+export const STEP_11_HIP_POSITION_SRC = `${imgDomainSrc}/v1770957760/guillotine-11-hip-position_facwlr.webp`
+export const STEP_12_SHOULDER_OVER_HEAD_SRC = `${imgDomainSrc}/v1770957761/guillotine-12-shoulder-over-head_mfhi3t.webp`
+export const STEP_13_ONLY_ARM_FINISH_SRC = `${imgDomainSrc}/v1770957761/guillotine-13-only-arm-finalization_fool8x.webp`
+export const STEP_14_SHOULDER_OVER_HEAD_SRC = `${imgDomainSrc}/v1770957762/guillotine-14-shoulder-over-head-arm-in-guill_ttosjm.webp`
+export const STEP_15_OVER_HIP_SRC = `${imgDomainSrc}/v1770957762/guillotine-15-sit-hip_dzbqr2.webp`
+export const STEP_16_ARM_IN_FINISH_SRC = `${imgDomainSrc}/v1770957762/guillotine-16-arm-in-guill-finalization_hqhthm.webp`

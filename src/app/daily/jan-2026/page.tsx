@@ -48,6 +48,44 @@ export default function DailyDec2025Page() {
 
         <hr />
 
+        <article className="flex flex-col gap-5">
+          <h4 className="text-2xl font-bold">Monday, Jan 12th</h4>
+
+          <div className="flex flex-col gap-4">
+            <p className="text-xl font-semibold">Back mount</p>
+            <ul className="list-disc list-inside">
+              <li>We got primary hand and secondary hand. The primary hand is the one that will strangle</li>
+              <li>If the oponent slides to the weak hand, then put your head next to your oponent between the mat and his head and don&apos;t let him to pin his head on the mat</li>
+              <li>If the oponent slides to the strong hand, then don&apos;t let him to escape his head from your hook or arm pining his head</li>
+              <li>With the secondary hand would attack the primary hand of the oponent always, that&apos;s first priority. Always control the primary hand</li>
+            </ul>
+          </div>
+
+          <div className="flex flex-col gap-4">
+            <p className="text-xl font-semibold">What did we do well?</p>
+            <ul className="list-disc list-inside">
+              <li>Transition from side control to kesa gatame</li>
+            </ul>
+          </div>
+
+          <div className="flex flex-col gap-4">
+            <p className="text-xl font-semibold">What did we saw?</p>
+            <ul className="list-disc list-inside">
+              <li>Check again open guard and de la riva guard</li>
+              <li>Gi choke from back mount</li>
+            </ul>
+          </div>
+
+          <div className="flex flex-col gap-4">
+            <p className="text-xl font-semibold">What needs improvement?</p>
+            <ul className="list-disc list-inside">
+              <li>I gassed out</li>
+              <li>The opponent passed my guard</li>
+              <li>I took a lot of guillotines</li>
+            </ul>
+          </div>
+        </article>
+
         {/* <article className="flex flex-col gap-5">
           <h4 className="text-2xl font-bold">Tuesday, December 23th</h4>
 
