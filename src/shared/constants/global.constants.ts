@@ -6,6 +6,7 @@ export const DAILY_JANUARY_2026_ROUTE = '/daily/jan-2026'
 export const PASSING_GUARD_ROUTE = '/basics/passing-guard';
 export const TRIANGLE_CHOKE_FROM_MOUNT_ROUTE = '/basics/mount/triangle-choke';
 export const ARMBAR_FROM_MOUNT_ROUTE = '/basics/mount/armbar'
+export const GUILLOTINE_CLOSED_GUARD_ROUTE = '/basics/closed-guard/guillotine';
 export const GUARD_RETENTION_ROUTE = '/basics/guard-retention';
 
 // Videos references
@@ -19,3 +20,4 @@ export const ARM_TRIANGLE_FROM_MOUNT_TIKTOK = 'https://vt.tiktok.com/ZS564kNxJ/'
 // Youtube video references
 export const TRIANGLE_CHOKE_SETUP_FROM_MOUNT_YT = 'https://www.youtube.com/watch?v=xnlx_hNfuZ4'
 export const ARMBAR_SETUP_FROM_MOUNT_YT = 'https://www.youtube.com/watch?v=iUap4TaYVQc&list=PL-immDk5vYqyuTMv0Rwq7yYSxvDBKkbVI&index=6&t=326s'
+export const GUILLLOTINE_SETUP_FROM_CLOSED_GUARD_YT = 'https://www.youtube.com/watch?v=YWwRC0V6O9Y'
