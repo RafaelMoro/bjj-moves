@@ -1,3 +1,9 @@
+## v0.9.1 (2026-02-13)
+
+### Pull Requests
+[#15](https://github.com/RafaelMoro/bjj-moves/pull/15) | Add feb progress
+
+
 ## v0.9.0 (2026-02-13)
 
 ### Pull Requests
