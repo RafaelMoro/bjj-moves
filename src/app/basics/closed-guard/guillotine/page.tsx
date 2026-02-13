@@ -59,7 +59,7 @@ export default function GuillotineFromClosedGuardPage() {
               />
 
               <li>
-                You want the blade of your wrist on the oponent's chin. Use the grip as a hook to pull my wrist through his neck
+                You want the blade of your wrist on the oponent&apos;s chin. Use the grip as a hook to pull my wrist through his neck
               </li>
               <img
                 src={STEP_2_WRIST_BLADE_SRC}
@@ -76,7 +76,7 @@ export default function GuillotineFromClosedGuardPage() {
                 className="md:aspect-square md:object-cover w-72 h-72 mb-10"
               />
 
-              <li>Be always on your hip. Be on the same side of the hip as where the oponent's head goes</li>
+              <li>Be always on your hip. Be on the same side of the hip as where the oponent&apos;s head goes</li>
               <img
                 src={STEP_11_HIP_POSITION_SRC}
                 alt="First step of armbar from mount"
@@ -133,7 +133,7 @@ export default function GuillotineFromClosedGuardPage() {
                 className="md:aspect-square md:object-cover w-72 h-72 mb-10"
               />
 
-              <li>To crimp the hose, bring the oponent's head to his chest</li>
+              <li>To crimp the hose, bring the oponent&apos;s head to his chest</li>
               <img
                 src={STEP_7_HEAD_POSITION_SRC}
                 alt="Fifth step of armbar from mount"
