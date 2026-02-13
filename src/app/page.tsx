@@ -28,36 +28,54 @@ export default function MainPage() {
           </ul>
         </article>
         <article>
-          <h4 className="text-xl font-semibold">Possibilities of each position</h4>
+          <h4 className="text-xl font-semibold">Submission possibilities by position</h4>
           <ul className="flex flex-col gap-2 ml-8 mt-4 list-disc p-2">
             <li>Closed guard</li>
             <ul className="list-disc pl-6">
               <li>Triangle choke</li>
               <li>Armbar</li>
+              <li>
+                <Link className="underline" href={GUILLOTINE_CLOSED_GUARD_ROUTE}>Guillotine</Link>
+              </li>
+              <li>Kimura (pending)</li>
             </ul>
             <li>Mount</li>
             <ul className="list-disc pl-6">
-              <li>Armbar</li>
+              <li>
+                <Link className="underline" href={ARMBAR_FROM_MOUNT_ROUTE}>Armbar</Link>
+              </li>
+              <li>Americana</li>
               <li>
                 <Link className="underline" href={TRIANGLE_CHOKE_FROM_MOUNT_ROUTE}>Triangle choke from mount</Link>
               </li>
             </ul>
             <li>Technical mount (back mount)</li>
-            <li><strong>Takedown:</strong> A technique used to bring an opponent to the ground from a standing position.</li>
+            <ul className="list-disc pl-6">
+              <li>Rear naked choke</li>
+              <li>Armbar</li>
+            </ul>
+            <li>Attack on turtle position</li>
           </ul>
         </article>
       </section>
 
         { /** Techniques section */}
-      <section className="flex flex-col gap-3">
-        <h4 className="text-xl font-semibold">Techniques</h4>
-        <nav className="flex flex-col gap-3 pl-4">
-          <Link className="underline" href={PASSING_GUARD_ROUTE}>Passing guard</Link>
-          <Link className="underline" href={GUARD_RETENTION_ROUTE}>Guard retention</Link>
-          <Link className="underline" href={TRIANGLE_CHOKE_FROM_MOUNT_ROUTE}>Triangle choke from mount</Link>
-          <Link className="underline" href={ARMBAR_FROM_MOUNT_ROUTE}>Armbar from mount</Link>
-          <Link className="underline" href={GUILLOTINE_CLOSED_GUARD_ROUTE}>Guillotine from closed guard</Link>
-        </nav>
+      <section className="grid grid-cols-2 gap-3">
+        <div className="flex flex-col gap-5">
+          <h4 className="text-xl font-semibold">Techniques</h4>
+          <nav className="flex flex-col gap-3 pl-4">
+            <Link className="underline" href={PASSING_GUARD_ROUTE}>Passing guard</Link>
+            <Link className="underline" href={GUARD_RETENTION_ROUTE}>Guard retention</Link>
+          </nav>
+        </div>
+        <div className="flex flex-col gap-5">
+          <h4 className="text-xl font-semibold">Submission techniques</h4>
+          <nav className="flex flex-col gap-3 pl-4">
+            <Link className="underline" href={TRIANGLE_CHOKE_FROM_MOUNT_ROUTE}>Triangle choke from mount</Link>
+            <Link className="underline" href={ARMBAR_FROM_MOUNT_ROUTE}>Armbar from mount</Link>
+            <Link className="underline" href={GUILLOTINE_CLOSED_GUARD_ROUTE}>Guillotine from closed guard</Link>
+          </nav>
+        </div>
       </section>
 
       { /** Daily notes section */}
