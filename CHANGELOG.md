@@ -1,3 +1,9 @@
+## v0.9.0 (2026-02-13)
+
+### Pull Requests
+[#13](https://github.com/RafaelMoro/bjj-moves/pull/13) | Add guillotine closed guard
+
+
 ## v0.8.0 (2026-02-04)
 
 ### Pull Requests
