@@ -1,3 +1,9 @@
+## v0.9.2 (2026-10-30)
+
+### Pull Requests
+[#16](https://github.com/RafaelMoro/bjj-moves/pull/16) | feat: Add October 2026 daily progress page
+
+
 ## v0.9.1 (2026-02-13)
 
 ### Pull Requests
