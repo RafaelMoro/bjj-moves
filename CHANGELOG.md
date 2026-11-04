@@ -1,3 +1,21 @@
+## v0.10.0 (2026-11-04)
+
+### Pull Requests
+[#17](https://github.com/RafaelMoro/bjj-moves/pull/17) | feat: Add Oct 31 / Nov daily notes and apply Modernist dark design
+
+
+## v0.9.2 (2026-10-30)
+
+### Pull Requests
+[#16](https://github.com/RafaelMoro/bjj-moves/pull/16) | feat: Add October 2026 daily progress page
+
+
+## v0.9.1 (2026-02-13)
+
+### Pull Requests
+[#15](https://github.com/RafaelMoro/bjj-moves/pull/15) | Add feb progress
+
+
 ## v0.9.0 (2026-02-13)
 
 ### Pull Requests
