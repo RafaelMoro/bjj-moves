@@ -1,6 +1,5 @@
-import { RiArrowLeftLine } from "@remixicon/react";
 import { Metadata } from "next";
-import Link from "next/link";
+import { DailyShell, DaySection, Topic } from "@/shared/components/DailyNotes";
 
 export const metadata: Metadata = {
   title: 'Daily progress October 2026',
@@ -9,43 +8,37 @@ export const metadata: Metadata = {
 
 export default function DailyOct2026Page() {
   return (
-    <div className="min-h-screen p-4">
-      <header className="grid grid-cols-3 gap-4">
-        <Link href="/">
-          <RiArrowLeftLine />
-        </Link>
-        <h1 className="text-4xl font-bold">Daily notes October 2026</h1>
-      </header>
+    <DailyShell title="October 2026">
+      <DaySection id="oct-29" weekday="Thursday" date="Oct 29th">
+        <Topic
+          title="Attacks from side control"
+          items={['Spinning armbar', 'Kimura', 'One-hand kimura', 'Americana', 'Straight armbar', 'Arm triangle']}
+        />
+        <Topic
+          title="Seated armbar from side control"
+          tag="When the oponent hugs my arm in the frame against his neck"
+          steps={[
+            'Secure the arm by putting my hand on the inside of his elbow',
+            'Mount the south leg',
+            'Pass the north leg next to his neck',
+            'Sit up',
+            'Two fingers down, then apply the armbar',
+          ]}
+        />
+      </DaySection>
 
-      <main className="mt-10 p-6 flex flex-col gap-8">
-        <article className="flex flex-col gap-5">
-          <h4 className="text-2xl font-bold">Thursday, Oct 29th</h4>
-
-          <div className="flex flex-col gap-4">
-            <p className="text-xl font-semibold">Attacks from side control</p>
-            <ul className="list-disc list-inside">
-              <li>Spinning armbar</li>
-              <li>Kimura</li>
-              <li>One-hand kimura</li>
-              <li>Americana</li>
-              <li>Straight armbar</li>
-              <li>Arm triangle</li>
-            </ul>
-          </div>
-
-          <div className="flex flex-col gap-4">
-            <p className="text-xl font-semibold">Seated armbar from side control</p>
-            <p>When the oponent hugs my arm in the frame against his neck:</p>
-            <ol className="list-decimal list-inside">
-              <li>Secure the arm by putting my hand on the inside of his elbow</li>
-              <li>Mount the south leg</li>
-              <li>Pass the north leg next to his neck</li>
-              <li>Sit up</li>
-              <li>Two fingers down, then apply the armbar</li>
-            </ol>
-          </div>
-        </article>
-      </main>
-    </div>
-  )
+      <DaySection id="oct-31" weekday="Saturday" date="Oct 31st">
+        <Topic
+          title="North south choke"
+          tag="When I'm on top in north south"
+          steps={[
+            'Put my forearm below his head, palm open facing the mat',
+            'Lock the S grip and walk towards the head',
+            'Place my delt on his neck',
+            'Drive the delt towards the mat, pushing a little above, as if placing my shoulder on the mat',
+          ]}
+        />
+      </DaySection>
+    </DailyShell>
+  );
 }
