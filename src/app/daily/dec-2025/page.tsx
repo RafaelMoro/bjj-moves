@@ -1,6 +1,5 @@
-import { RiArrowLeftLine } from "@remixicon/react";
 import { Metadata } from "next";
-import Link from "next/link";
+import { DailyShell, DaySection, NextToTry, RetroGroup } from "@/shared/components/DailyNotes";
 
 export const metadata: Metadata = {
   title: 'Daily progress December 2025',
@@ -9,115 +8,55 @@ export const metadata: Metadata = {
 
 export default function DailyDec2025Page() {
   return (
-    <div className="min-h-screen p-4">
-      <header className="grid grid-cols-3 gap-4">
-        <Link href="/">
-          <RiArrowLeftLine />
-        </Link>
-        <h1 className="text-4xl font-bold">Daily notes December 2025</h1>
-      </header>
+    <DailyShell
+      title="December 2025"
+      eyebrow="Daily notes · Retrospective"
+      closing={
+        <NextToTry
+          month="December"
+          items={['Try armbar from mount', 'Try guillotine', 'Try darce choke from north south', 'Transition from mount to back mount']}
+        />
+      }
+    >
+      <DaySection id="dec-22" weekday="Monday" date="Dec 22nd">
+        <RetroGroup variant="well" title="What did we do well?" items={[
+          'Transition from side control to kesa gatame',
+          'Transition from side control to north south',
+        ]} />
+        <RetroGroup variant="improve" title="What needs improvement?" items={[
+          'Isolate the arm in kesa gatame',
+          'Being able to secure the arms in side control, kesa gatame and north south',
+          "Improve escape while being in opponent's closed guard",
+          'Close contact in open guard',
+          'While passing guard, enter with the knee and lower your body',
+        ]} />
+      </DaySection>
 
-      <main className="mt-10 flex flex-col items-center gap-8">
-        <article className="flex flex-col gap-5">
-          <h4 className="text-2xl font-bold">Monday, December 22th</h4>
+      <DaySection id="dec-23" weekday="Tuesday" date="Dec 23rd">
+        <RetroGroup variant="well" title="What did we do well?" items={['Defend americana', 'Defend armbar']} />
+        <RetroGroup variant="improve" title="What needs improvement?" items={[
+          { text: 'I got my guard passed down', children: ["I didn't put my foot in my opponent's hips", 'Always bring your legs into your opponent'] },
+          'The opponent passed from side control to mount',
+          "I couldn't pass the opponent's guard and finished on triangles or armbars",
+          "I couldn't finished the darce choke from north south",
+          "I didn't finished the americana or armbar in kesa gatame",
+        ]} />
+      </DaySection>
 
-          <div className="flex flex-col gap-4">
-            <p className="text-xl font-semibold">What did we do well?</p>
-            <ul className="list-disc list-inside">
-              <li>Transition from side control to kesa gatame</li>
-              <li>Transition from side control to north south</li>
-            </ul>
-          </div>
-
-          <div className="flex flex-col gap-4">
-            <p className="text-xl font-semibold">What needs improvement?</p>
-            <ul className="list-disc list-inside">
-              <li>Isolate the arm in kesa gatame</li>
-              <li>Being able to secure the arms in side control, kesa gatame and north south</li>
-              <li>Improve escape while being in opponent&apos;s closed guard</li>
-              <li>Close contact in open guard</li>
-              <li>While passing guard, enter with the knee and lower your body</li>
-            </ul>
-          </div>
-        </article>
-
-        <hr />
-
-        <article className="flex flex-col gap-5">
-          <h4 className="text-2xl font-bold">Tuesday, December 23th</h4>
-
-          <div className="flex flex-col gap-4">
-            <p className="text-xl font-semibold">What did we do well?</p>
-            <ul className="list-disc list-inside">
-              <li>Defend americana</li>
-              <li>Defend armbar</li>
-            </ul>
-          </div>
-
-          <div className="flex flex-col gap-4">
-            <p className="text-xl font-semibold">What needs improvement?</p>
-            <ul className="list-disc list-inside">
-              <li>I got my guard passed down</li>
-              <ul className="list-disc pl-4 list-inside">
-                <li>I didn&apos;t put my foot in my opponent&apos;s hips</li>
-                <li>Always bring your legs into your opponent</li>
-              </ul>
-              <li>The opponent passed from side control to mount</li>
-              <li>I couldn&apos;t pass the opponent&apos;s guard and finished on triangles or armbars</li>
-              <li>I couldn&apos;t finished the darce choke from north south</li>
-              <li>I didn&apos;t finished the americana or armbar in kesa gatame</li>
-            </ul>
-          </div>
-        </article>
-
-        <article className="flex flex-col gap-5">
-          <h4 className="text-2xl font-bold">Wednesday, December 31st</h4>
-
-          <div className="flex flex-col gap-4">
-            <p className="text-xl font-semibold">What did we do well?</p>
-            <ul className="list-disc list-inside">
-              <li>My first submission from back mount with Rear naked choke</li>
-            </ul>
-          </div>
-
-          <div className="flex flex-col gap-4">
-            <p className="text-xl font-semibold">What did we saw?</p>
-            <ul className="list-disc list-inside">
-              <li>5 steps of the mount</li>
-              <li>Americana with armbar from side control</li>
-              <li>How to control an arm by walking your hand in the mat in a circle</li>
-              <li>Basics of side control</li>
-              <ul className="list-disc pl-4 list-inside">
-                <li>Have direct contact chest to chest</li>
-                <li>Crossface</li>
-              </ul>
-            </ul>
-          </div>
-
-          <div className="flex flex-col gap-4">
-            <p className="text-xl font-semibold">What needs improvement?</p>
-            <ul className="list-disc list-inside">
-              <li>I gassed out</li>
-              <li>I let my guard being passed down</li>
-              <ul className="list-disc pl-4 list-inside">
-                <li>I didn&apos;t put my foot in my opponent&apos;s hips</li>
-                <li>Always bring your legs into your opponent</li>
-              </ul>
-              <li>I couldn&apos;t pass the opponent&apos;s guard and finished on triangles or armbars</li>
-            </ul>
-          </div>
-        </article>
-
-        <section className="flex flex-col gap-5">
-          <h2 className="text-3xl font-bold">Next things to try</h2>
-          <ul className="flex flex-col gap-2">
-            <li>Try armbar from mount</li>
-            <li>Try guillotine</li>
-            <li>Try darce choke from north south</li>
-            <li>Transition from mount to back mount</li>
-          </ul>
-        </section>
-      </main>
-    </div>
-  )
+      <DaySection id="dec-31" weekday="Wednesday" date="Dec 31st">
+        <RetroGroup variant="well" title="What did we do well?" items={['My first submission from back mount with Rear naked choke']} />
+        <RetroGroup variant="saw" title="What did we saw?" items={[
+          '5 steps of the mount',
+          'Americana with armbar from side control',
+          'How to control an arm by walking your hand in the mat in a circle',
+          { text: 'Basics of side control', children: ['Have direct contact chest to chest', 'Crossface'] },
+        ]} />
+        <RetroGroup variant="improve" title="What needs improvement?" items={[
+          'I gassed out',
+          { text: 'I let my guard being passed down', children: ["I didn't put my foot in my opponent's hips", 'Always bring your legs into your opponent'] },
+          "I couldn't pass the opponent's guard and finished on triangles or armbars",
+        ]} />
+      </DaySection>
+    </DailyShell>
+  );
 }

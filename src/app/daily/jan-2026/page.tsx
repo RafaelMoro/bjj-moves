@@ -1,164 +1,53 @@
-import { RiArrowLeftLine } from "@remixicon/react";
 import { Metadata } from "next";
-import Link from "next/link";
+import { DailyShell, DaySection, NextToTry, RetroGroup } from "@/shared/components/DailyNotes";
 
 export const metadata: Metadata = {
-  title: 'Daily progress December 2025',
-  description: 'Find daily notes improvements and observations for Brazilian Jiu-Jitsu in December 2025.',
+  title: 'Daily progress January 2026',
+  description: 'Find daily notes improvements and observations for Brazilian Jiu-Jitsu in January 2026.',
 };
 
-export default function DailyDec2025Page() {
+const WELL = ['Transition from side control to kesa gatame'];
+const SAW = ['Check again open guard and de la riva guard', 'Gi choke from back mount'];
+const IMPROVE = ['I gassed out', 'The opponent passed my guard', 'I took a lot of guillotines'];
+
+export default function DailyJan2026Page() {
   return (
-    <div className="min-h-screen p-4">
-      <header className="grid grid-cols-3 gap-4">
-        <Link href="/">
-          <RiArrowLeftLine />
-        </Link>
-        <h1 className="text-4xl font-bold">Daily notes January 2026</h1>
-      </header>
+    <DailyShell
+      title="January 2026"
+      eyebrow="Daily notes · Retrospective"
+      closing={
+        <NextToTry
+          month="January"
+          items={[
+            'Try armbar from mount',
+            'Try triangle choke from mount',
+            'Try guillotine from closed guard',
+            'Try darce choke from north south',
+            'Transition from mount to back mount',
+            'Transition from me being in closed guard into ashi garami',
+            'Scissor sweep from closed guard to mount',
+            'Transition from side control to knee on belly',
+          ]}
+        />
+      }
+    >
+      <DaySection id="jan-01" weekday="Thursday" date="Jan 1st">
+        <RetroGroup variant="well" title="What did we do well?" items={WELL} />
+        <RetroGroup variant="saw" title="What did we saw?" items={SAW} />
+        <RetroGroup variant="improve" title="What needs improvement?" items={IMPROVE} />
+      </DaySection>
 
-      <main className="mt-10 flex flex-col items-center gap-8">
-        <article className="flex flex-col gap-5">
-          <h4 className="text-2xl font-bold">Thursday, Jan 1st</h4>
-
-          <div className="flex flex-col gap-4">
-            <p className="text-xl font-semibold">What did we do well?</p>
-            <ul className="list-disc list-inside">
-              <li>Transition from side control to kesa gatame</li>
-            </ul>
-          </div>
-
-          <div className="flex flex-col gap-4">
-            <p className="text-xl font-semibold">What did we saw?</p>
-            <ul className="list-disc list-inside">
-              <li>Check again open guard and de la riva guard</li>
-              <li>Gi choke from back mount</li>
-            </ul>
-          </div>
-
-          <div className="flex flex-col gap-4">
-            <p className="text-xl font-semibold">What needs improvement?</p>
-            <ul className="list-disc list-inside">
-              <li>I gassed out</li>
-              <li>The opponent passed my guard</li>
-              <li>I took a lot of guillotines</li>
-            </ul>
-          </div>
-        </article>
-
-        <hr />
-
-        <article className="flex flex-col gap-5">
-          <h4 className="text-2xl font-bold">Monday, Jan 12th</h4>
-
-          <div className="flex flex-col gap-4">
-            <p className="text-xl font-semibold">Back mount</p>
-            <ul className="list-disc list-inside">
-              <li>We got primary hand and secondary hand. The primary hand is the one that will strangle</li>
-              <li>If the oponent slides to the weak hand, then put your head next to your oponent between the mat and his head and don&apos;t let him to pin his head on the mat</li>
-              <li>If the oponent slides to the strong hand, then don&apos;t let him to escape his head from your hook or arm pining his head</li>
-              <li>With the secondary hand would attack the primary hand of the oponent always, that&apos;s first priority. Always control the primary hand</li>
-            </ul>
-          </div>
-
-          <div className="flex flex-col gap-4">
-            <p className="text-xl font-semibold">What did we do well?</p>
-            <ul className="list-disc list-inside">
-              <li>Transition from side control to kesa gatame</li>
-            </ul>
-          </div>
-
-          <div className="flex flex-col gap-4">
-            <p className="text-xl font-semibold">What did we saw?</p>
-            <ul className="list-disc list-inside">
-              <li>Check again open guard and de la riva guard</li>
-              <li>Gi choke from back mount</li>
-            </ul>
-          </div>
-
-          <div className="flex flex-col gap-4">
-            <p className="text-xl font-semibold">What needs improvement?</p>
-            <ul className="list-disc list-inside">
-              <li>I gassed out</li>
-              <li>The opponent passed my guard</li>
-              <li>I took a lot of guillotines</li>
-            </ul>
-          </div>
-        </article>
-
-        {/* <article className="flex flex-col gap-5">
-          <h4 className="text-2xl font-bold">Tuesday, December 23th</h4>
-
-          <div className="flex flex-col gap-4">
-            <p className="text-xl font-semibold">What did we do well?</p>
-            <ul className="list-disc list-inside">
-              <li>Defend americana</li>
-              <li>Defend armbar</li>
-            </ul>
-          </div>
-
-          <div className="flex flex-col gap-4">
-            <p className="text-xl font-semibold">What needs improvement?</p>
-            <ul className="list-disc list-inside">
-              <li>I got my guard passed down</li>
-              <ul className="list-disc pl-4 list-inside">
-                <li>I didn&apos;t put my foot in my opponent&apos;s hips</li>
-                <li>Always bring your legs into your opponent</li>
-              </ul>
-              <li>The opponent passed from side control to mount</li>
-              <li>I couldn&apos;t pass the opponent&apos;s guard and finished on triangles or armbars</li>
-              <li>I couldn&apos;t finished the darce choke from north south</li>
-              <li>I didn&apos;t finished the americana or armbar in kesa gatame</li>
-            </ul>
-          </div>
-        </article>
-
-        <article className="flex flex-col gap-5">
-          <h4 className="text-2xl font-bold">Wednesday, December 31st</h4>
-
-          <div className="flex flex-col gap-4">
-            <p className="text-xl font-semibold">What did we do well?</p>
-            <ul className="list-disc list-inside">
-              <li>My first submission from back mount with Rear naked choke</li>
-            </ul>
-          </div>
-
-          <div className="flex flex-col gap-4">
-            <p className="text-xl font-semibold">What did we saw?</p>
-            <ul className="list-disc list-inside">
-              <li>5 steps of the mount</li>
-              <li>Americana with armbar from side control</li>
-            </ul>
-          </div>
-
-          <div className="flex flex-col gap-4">
-            <p className="text-xl font-semibold">What needs improvement?</p>
-            <ul className="list-disc list-inside">
-              <li>I gassed out</li>
-              <li>I let my guard being passed down</li>
-              <ul className="list-disc pl-4 list-inside">
-                <li>I didn&apos;t put my foot in my opponent&apos;s hips</li>
-                <li>Always bring your legs into your opponent</li>
-              </ul>
-              <li>I couldn&apos;t pass the opponent&apos;s guard and finished on triangles or armbars</li>
-            </ul>
-          </div>
-        </article> */}
-
-        <section className="flex flex-col gap-5">
-          <h2 className="text-3xl font-bold">Next things to try</h2>
-          <ul className="flex flex-col gap-2">
-            <li>Try armbar from mount</li>
-            <li>Try triangle choke from mount</li>
-            <li>Try guillotine from closed guard</li>
-            <li>Try darce choke from north south</li>
-            <li>Transition from mount to back mount</li>
-            <li>Transition from me being in closed guard into ashi garami</li>
-            <li>Scissor sweep from closed guard to mount</li>
-            <li>Transition from side control to knee on belly</li>
-          </ul>
-        </section>
-      </main>
-    </div>
-  )
+      <DaySection id="jan-12" weekday="Monday" date="Jan 12th">
+        <RetroGroup variant="plain" title="Back mount" items={[
+          'We got primary hand and secondary hand. The primary hand is the one that will strangle',
+          "If the oponent slides to the weak hand, then put your head next to your oponent between the mat and his head and don't let him to pin his head on the mat",
+          "If the oponent slides to the strong hand, then don't let him to escape his head from your hook or arm pining his head",
+          "With the secondary hand would attack the primary hand of the oponent always, that's first priority. Always control the primary hand",
+        ]} />
+        <RetroGroup variant="well" title="What did we do well?" items={WELL} />
+        <RetroGroup variant="saw" title="What did we saw?" items={SAW} />
+        <RetroGroup variant="improve" title="What needs improvement?" items={IMPROVE} />
+      </DaySection>
+    </DailyShell>
+  );
 }
