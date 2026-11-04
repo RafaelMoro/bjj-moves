@@ -45,6 +45,23 @@ export default function DailyOct2026Page() {
             </ol>
           </div>
         </article>
+
+        <hr />
+
+        <article className="flex flex-col gap-5">
+          <h4 className="text-2xl font-bold">Saturday, Oct 31st</h4>
+
+          <div className="flex flex-col gap-4">
+            <p className="text-xl font-semibold">North south choke</p>
+            <p>When I&apos;m on top in north south:</p>
+            <ol className="list-decimal list-inside">
+              <li>Put my forearm below his head, palm open facing the mat</li>
+              <li>Lock the S grip and walk towards the head</li>
+              <li>Place my delt on his neck</li>
+              <li>Drive the delt towards the mat, pushing a little above, as if placing my shoulder on the mat</li>
+            </ol>
+          </div>
+        </article>
       </main>
     </div>
   )
