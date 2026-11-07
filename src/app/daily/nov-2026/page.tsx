@@ -77,6 +77,87 @@ export default function DailyNov2026Page() {
           ]}
         />
       </DaySection>
+
+      <DaySection id="nov-04" weekday="Wednesday" date="Nov 4th">
+        <Topic title="Turtle position" />
+        <Topic
+          title="Clock choke with the gi (incomplete)"
+          tag="The oponent is on turtle and I'm on any of his sides"
+          note="I don't remember what comes next."
+          steps={[
+            'My far arm attacks the lapel of the gi',
+            'The other hand goes behind the neck, holding the gi',
+          ]}
+        />
+        <Topic
+          title="Crucifix transition"
+          note="Be extremely careful here: you may hurt your partner if you go aggressively with the americana or the armbar with the legs. From the crucifix, finish gently with an armbar using your legs, or an americana."
+          steps={[
+            'Far hand grabs the lapel and near hand grabs the wrist',
+            'Post the far leg; when he underhooks it, immediately trap that arm',
+            'Sit on my knees and bring him into me to put him in the crucifix',
+          ]}
+        />
+      </DaySection>
+
+      <DaySection id="nov-05" weekday="Thursday" date="Nov 5th">
+        <Topic title="Turtle position" />
+        <Topic
+          title="Deepening asymmetric hooks for the back choke"
+          tag="Pick a side"
+          steps={[
+            'My far arm goes to the neck looking for the choke; the near arm grips the wrist, entering from the armpit towards the wrist',
+            'With the wrist grip, push my elbow out to create space at the hip',
+            'Insert the hook with the leg fully deep, hooking his leg with mine, and put the other hook with the opposite leg towards his adductor. My weight should be more on the side of the deep hook',
+            'Switch grips: the arm on the side of the deep leg now chokes, and the other arm grips his other wrist',
+            'Open his hips with my leg hooks to flatten him',
+          ]}
+        />
+      </DaySection>
+
+      <DaySection id="nov-07" weekday="Saturday" date="Nov 7th">
+        <Topic
+          title="Leg locks"
+          definition="The key is the hook you make with your knee and your heel towards the oponent's hip. Without it, you can't get leverage."
+          note="Defense: turning to your side doesn't work, it leaves you in a worse position and reduces your chances to escape."
+        />
+        <Topic
+          title="Achilles defense: attacking his heel"
+          tag="The oponent has me in an achilles lock"
+          note="His inside leg pins with the knee and his outside leg completes the pin with the heel."
+          steps={[
+            'Keep my foot in a neutral position, not pointing nor flexing it',
+            'Bring his heel down',
+            'Pass to the other side, either trapping his outside leg under my butt or leaving it on the other side',
+          ]}
+        />
+        <Topic
+          title="Achilles offense: when he reacts to my heel"
+          tag="Transition to outside ashi"
+          note="Because of how you react to this defense, your chest ends up almost facing the floor."
+          steps={[
+            'The moment he grabs my heel and brings it down, use my inside leg and put it between his leg and his hip',
+            'Go fully deep with that leg until the knee of my inside leg touches the heel of my outside leg again',
+          ]}
+        />
+        <Topic
+          title="Achilles defense: standing up"
+          steps={[
+            "Don't let him extend my foot: toes facing the ceiling, not to the side of the leg, to make the submission harder",
+            'Stand up forward, planting the trapped foot',
+            'Bring the knee down and pass the guard',
+          ]}
+        />
+        <Topic
+          title="Outside ashi defense (not deep)"
+          note="If the oponent went deep on his outside ashi, it's very hard to escape. If he didn't, use the same standing defense: both of his legs will be pointing out, on the outside of my hip."
+          steps={[
+            'Get an underhook, then a crossface',
+            'Extend my legs, breaking his grip',
+            'Transition to side control',
+          ]}
+        />
+      </DaySection>
     </DailyShell>
   );
 }
