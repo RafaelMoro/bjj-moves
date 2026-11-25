@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { DailyShell, DaySection, Topic } from "@/shared/components/DailyNotes";
+import { DailyShell, DaySection, RetroGroup, Topic } from "@/shared/components/DailyNotes";
 
 export const metadata: Metadata = {
   title: 'Daily progress November 2026',
@@ -157,6 +157,81 @@ export default function DailyNov2026Page() {
             'Transition to side control',
           ]}
         />
+      </DaySection>
+
+      <DaySection id="nov-16" weekday="Monday" date="Nov 16th">
+        <Topic
+          title="Technical review"
+          note="Class reviewing technical questions about what was seen by those who went to the BJJ camp."
+        />
+        <Topic
+          title="De la riva: three points of contact with the gi"
+          steps={[
+            'Shin to shin',
+            'Grab the inside of his knee with my hand or bicep, like hugging the leg',
+            'Grip his sleeve on the opposite side of the leg I control with my ankle and the shin to shin',
+          ]}
+        />
+        <RetroGroup variant="plain" title="De la riva key points" items={[
+          'If he grips my gi at the knee, I break the grip by pushing my leg and pulling his hand into me',
+          'If he breaks my grip on his hand, I immediately look for his farthest lapel and take it with the hand that is attacking the leg with the de la riva: it goes under the leg and grips',
+        ]} />
+        <Topic
+          title="De la riva sweep with the gi"
+          steps={[
+            'Always look to grip the hand opposite to the leg I attack with the de la riva',
+            'Once I have the three points of contact, push his other leg with my other leg (de la riva with the left, push with the right)',
+            'Pull the hand grip and roll onto my shoulder so he loses the ability to post',
+            'Then I may take his back to pressure and transition to side control',
+          ]}
+        />
+        <Topic
+          title="Half guard 90/10"
+          tag="The oponent is facing me"
+          note="His south leg is trapped in my half guard, and his north leg is usually posted at the height of my head."
+          steps={[
+            'Grab his north leg, like going forward to his hip',
+            'Change the half guard and my body: instead of facing him, I face the same way he is facing',
+            'If he goes all the way to the front posting, I can work to take his back',
+            'If he has his weight more to the side of his back, drive into his legs, then double under and pass the guard',
+          ]}
+        />
+        <Topic
+          title="Side control tip: hip frame"
+          tag="I start in side control"
+          steps={[
+            'Lower my hip near his head to collapse the frame on the hip',
+            'Switch and walk my leg to isolate the arm near the head',
+          ]}
+        />
+        <RetroGroup variant="improve" title="What needs improvement?" items={[
+          'My guard gets passed when my legs collapse',
+          'I end up in side control',
+          "When I attack from side control, I'm not isolating the hip frame",
+          'Improve knee on belly',
+        ]} />
+        <RetroGroup variant="plain" title="Other useful tips" items={[
+          'Attack the arms with my legs as well, and pin them',
+        ]} />
+      </DaySection>
+
+      <DaySection id="nov-24" weekday="Tuesday" date="Nov 24th">
+        <Topic
+          title="Fighting from the top"
+          note="We saw a scheme that is new to me for fighting from the top."
+          items={['Single leg', 'Double leg', 'Snap down to turtle, then front headlock and transition to the back', 'Arm drag']}
+        />
+        <Topic
+          title="Drill: touch the knee 3 times"
+          note="Touch the oponent's knee 3 times, then I can take him down or attack with:"
+          items={['Single leg', 'Arm drag (no takedown)', 'Snap down']}
+        />
+        <RetroGroup variant="improve" title="What needs improvement?" items={[
+          { text: 'Focus', children: ['My morale dropped, everyone submitted me', 'Recover the fighting mentality'] },
+          "I didn't look to fight from the bottom to get the points of contact",
+          'I let my guard be passed easily',
+          "I didn't escape side control or mount",
+        ]} />
       </DaySection>
     </DailyShell>
   );
