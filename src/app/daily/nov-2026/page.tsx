@@ -233,6 +233,50 @@ export default function DailyNov2026Page() {
           "I didn't escape side control or mount",
         ]} />
       </DaySection>
+
+      <DaySection id="nov-25" weekday="Wednesday" date="Nov 25th">
+        <Topic
+          title="Fighting from the top: grips"
+          tag="Main topic: fighting from the top"
+          definition="There are two important grips. The main grip is on the gi at collarbone height: usually my right hand looks for his left lapel. I can also go for his right lapel, which is harder to remove. The secondary grip is on the gi at elbow height with my other hand (the left one in this example), tensing my hand by flexing the wrist: palm facing out and the back of my hand facing me."
+        />
+        <Topic
+          title="Feint"
+          steps={[
+            'Raise my right hand and come closer, looking for him to react by covering himself with his hand',
+            'When he reacts, grab his left lapel with my other hand (the left one in this case)',
+            'Switch the grip to my right hand',
+          ]}
+        />
+        <Topic
+          title="Attack"
+          note="Once I have both grips, pull him towards me, squaring him up so my leg points between his legs."
+          items={['Grab his belt and bring my body into his to make the takedown easier', 'Single legs']}
+        />
+        <RetroGroup variant="plain" title="Grip defense" items={[
+          {
+            text: 'Removing the main grip',
+            children: [
+              'Grab the wrist of his sleeve with both hands and push out, holding the sleeve towards his thumb: not forward, but outwards',
+              'If the grip is close to the neck, move my head so his wrist ends up on my neck with his hand twisted and no grip power. If he grips my right lapel with his right hand, pass his arm around my head until the back of his hand is on my neck',
+            ],
+          },
+          {
+            text: 'Removing the secondary grip on the wrist',
+            children: ['Bring my arm down towards my knee', 'Put my knee over his gripping hand and pull my arm towards me'],
+          },
+          {
+            text: 'Removing the secondary grip on the elbow',
+            children: ['Bring my arm towards my torso, or bring the hand towards my hip', 'With my other hand, push his gripping hand out'],
+          },
+        ]} />
+        <RetroGroup variant="improve" title="What needs improvement?" items={[
+          'Focus on my game: the control and what I will do for the submission',
+          'Take advantage of the offense',
+          'Attack the far arm in side control',
+          'Isolate the near arm in side control',
+        ]} />
+      </DaySection>
     </DailyShell>
   );
 }
