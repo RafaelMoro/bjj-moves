@@ -6,7 +6,7 @@ const archivo = Archivo({ subsets: ["latin"], weight: ["400", "600", "700", "800
 
 const tagNeutral = 'self-start inline-flex items-center text-[11px] tracking-[0.02em] px-2.5 py-[3px] bg-(--color-neutral-100) text-(--color-neutral-800)';
 
-export function DailyShell({ title, eyebrow = 'Daily notes', closing, children }: { title: string; eyebrow?: string; closing?: React.ReactNode; children: React.ReactNode }) {
+export function DailyShell({ title, eyebrow = 'Daily notes', back = ['/#daily', '← All daily notes'], closing, children }: { title: string; eyebrow?: string; back?: [href: string, label: string]; closing?: React.ReactNode; children: React.ReactNode }) {
   return (
     <div id="top" className={`${archivo.className} bjj-home min-h-screen`}>
       <header className="sticky top-0 z-10 bg-(--color-bg) border-b-2 border-(--color-text)">
@@ -14,7 +14,7 @@ export function DailyShell({ title, eyebrow = 'Daily notes', closing, children }
           <Link href="/" className="mr-auto flex items-center gap-2 text-lg font-extrabold tracking-[-0.01em] text-(--color-text)">
             <span className="block size-3.5 bg-(--color-accent)" />BJJ Notes
           </Link>
-          <Link href="/#daily" className="text-sm font-semibold text-(--color-text)">← All daily notes</Link>
+          <Link href={back[0]} className="text-sm font-semibold text-(--color-text)">{back[1]}</Link>
         </nav>
       </header>
 
@@ -30,7 +30,7 @@ export function DailyShell({ title, eyebrow = 'Daily notes', closing, children }
 
       <footer className="border-t-2 border-(--color-text)">
         <div className="max-w-[1200px] mx-auto p-6 flex flex-wrap justify-between gap-4 text-sm text-(--color-neutral-700)">
-          <Link href="/#daily" className="text-(--color-accent-700)">← All daily notes</Link>
+          <Link href={back[0]} className="text-(--color-accent-700)">{back[1]}</Link>
           <a href="#top" className="text-(--color-accent-700)">Back to top ↑</a>
         </div>
       </footer>
@@ -61,12 +61,16 @@ type TopicProps = {
   steps?: string[];
   /** Short items shown as a bordered grid instead of numbered steps. */
   items?: string[];
+  /** External source (video or article), shown as a link under the title. */
+  link?: string;
+  linkLabel?: string;
 };
 
-export function Topic({ title, tag, note, definition, steps, items }: TopicProps) {
+export function Topic({ title, tag, note, definition, steps, items, link, linkLabel = 'Watch video' }: TopicProps) {
   return (
     <article className="flex flex-col gap-4">
       <h3 className="m-0 text-[22px] font-extrabold tracking-[-0.01em] pb-2 border-b-2 border-(--color-text)">{title}</h3>
+      {link && <a href={link} target="_blank" rel="noreferrer" className="self-start text-sm font-bold text-(--color-accent-700)">{linkLabel} ↗</a>}
       {tag && <span className={tagNeutral}>{tag}</span>}
       {note && <p className="m-0 leading-normal text-(--color-neutral-800) text-pretty">{note}</p>}
       {definition && (

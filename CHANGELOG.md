@@ -1,3 +1,9 @@
+## v0.11.0 (2026-11-27)
+
+### Pull Requests
+[#24](https://github.com/RafaelMoro/bjj-moves/pull/24) | feat: Add study notes and class notes pages
+
+
 ## v0.10.3 (2026-11-27)
 
 ### Pull Requests
