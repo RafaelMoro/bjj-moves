@@ -60,6 +60,8 @@ Does not exist yet: shared `components/`, `lib/`, `hooks/`, `types/`, route hand
 | `/daily/dec-2025` | `src/app/daily/dec-2025/page.tsx` | Server (static) | — | Training notes, December 2025 |
 | `/daily/jan-2026` | `src/app/daily/jan-2026/page.tsx` | Server (static) | — | Training notes, January 2026 |
 | `/daily/feb-2026` | `src/app/daily/feb-2026/page.tsx` | Server (static) | — | Training notes, February 2026 |
+| `/notes/study` | `src/app/notes/study/page.tsx` | Server (static) | — | Undated notes from instructional videos, by position |
+| `/notes/class` | `src/app/notes/class/page.tsx` | Server (static) | — | Undated class notes: drills, half guard, grips, ABCs |
 
 Rendering: Server (static), Server (dynamic), or Client. The only client components are `providers.tsx` and the unused `features/Home.tsx`.
 
