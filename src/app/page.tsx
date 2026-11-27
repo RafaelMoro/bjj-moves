@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Link from 'next/link'
 import { Archivo } from "next/font/google";
 import {
-  ARM_TRIANGLE_FROM_MOUNT_TIKTOK, ARMBAR_FROM_MOUNT_ROUTE, DAILY_DECEMBER_2025_ROUTE, DAILY_FEBRUARY_2026_ROUTE, DAILY_JANUARY_2026_ROUTE, DAILY_NOVEMBER_2026_ROUTE, DAILY_OCTOBER_2026_ROUTE, DUCK_UNDER_ROUTE,
+  ARM_TRIANGLE_FROM_MOUNT_TIKTOK, ARMBAR_FROM_MOUNT_ROUTE, DAILY_DECEMBER_2025_ROUTE, DAILY_FEBRUARY_2026_ROUTE, DAILY_JANUARY_2026_ROUTE, DAILY_NOVEMBER_2026_ROUTE, DAILY_OCTOBER_2026_ROUTE, DUCK_UNDER_ROUTE, CLASS_NOTES_ROUTE, STUDY_NOTES_ROUTE,
   GUARD_RETENTION_ROUTE, GUILLOTINE_CLOSED_GUARD_ROUTE, NO_GI_DARCE_CHOKE_NORTH_SOUTH, NO_GI_EZEKIEL_CHOKE_TIKTOK, PASSING_GUARD_ROUTE, TRANSITION_BREAKING_GUARD_LINK,
   TRANSITION_SIDECONTROL_NORTHSOUTH_LINK, TRANSITION_SWEEP_MOUNT_CLOSED_GUARD_LINK, TRIANGLE_CHOKE_FROM_MOUNT_ROUTE
 } from "@/shared/constants/global.constants";
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 const NAV = [
   ['terms', 'Terms'], ['positions', 'Positions'], ['techniques', 'Techniques'], ['submissions', 'Submissions'],
-  ['daily', 'Daily notes'], ['try', 'To try'], ['takedowns', 'Takedowns'],
+  ['daily', 'Daily notes'], ['notes', 'Notes'], ['try', 'To try'], ['takedowns', 'Takedowns'],
 ] as const;
 
 const TERMS = [
@@ -107,6 +107,7 @@ const SUBMISSIONS = [
   ['Guillotine from closed guard', GUILLOTINE_CLOSED_GUARD_ROUTE],
 ] as const;
 const TAKEDOWNS = [['Duck under', DUCK_UNDER_ROUTE]] as const;
+const NOTES = [['Study notes (videos)', STUDY_NOTES_ROUTE], ['Class notes', CLASS_NOTES_ROUTE]] as const;
 
 const tagAccent = 'inline-flex items-center text-[11px] tracking-[0.02em] px-2.5 py-[3px] bg-(--color-accent-100) text-(--color-accent-800)';
 
@@ -230,6 +231,7 @@ export default function MainPage() {
         </Section>
 
         <Section id="takedowns" n="07" title="Takedowns"><LinkList items={TAKEDOWNS} /></Section>
+        <Section id="notes" n="08" title="Notes"><LinkList items={NOTES} /></Section>
       </main>
 
       <footer className="border-t-2 border-(--color-text)">
